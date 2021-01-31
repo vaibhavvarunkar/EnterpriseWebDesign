@@ -1,0 +1,464 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+p{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    font-weight: 400;
+    color: rgb(146, 145, 145);
+}
+
+h2{
+    font-size: 1.2rem;
+    margin: 20px 0 15px 0;
+    line-height: 1.1;
+    font-weight: bold;
+    word-spacing: 4px;
+    text-transform: uppercase;
+}
+
+h1{
+    text-transform: uppercase;
+}
+
+/* ########################################## Header Styling ################################# */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgb(133, 211, 250), rgba(0,168,255,0.3)) , url(../images/pexels-andrea-piacquadio-3863783-min.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    clip-path: polygon(100% 0, 100% 80%, 50% 100%, 0 80%, 0 0);
+    position: relative;
+}
+
+.navbar{
+    background-color: linear-gradient(rgba(0,168,255,0.3), rgba(0,168,255,0.3)) ;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-toggler{
+    color: black;
+    background-color: skyblue;
+}
+
+.navbar-brand:hover{
+    color: rgb(39, 132, 238)!important;
+}
+
+.nav-item a{
+    color: #fff!important;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 2;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.nav-item a:hover{
+    color:rgb(39, 132, 238)!important;
+    border-bottom: 2px solid rgb(39, 132, 238);
+}
+
+.header-section{
+    width: 100%;
+    height: inherit;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.center-div{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.center-div p{
+    font-size: 1.3rem;
+    padding: 10px 0 20px 0;
+    color: white;
+}
+
+.header-buttons a{
+    border: 2px solid #fff;
+    border-radius: 50px;
+    margin: 5px 5px;
+    padding: 12px 35px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #fff;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.header-buttons a:hover{
+    color: #fff;
+    background: rgb(39, 132, 238);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* ############################################### Shocase Styling ###################################################### */
+
+.showcase {
+    width: 100%;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.showcase .extra-div{
+    background: #fff;
+    border: medium none;
+    padding: 30px !important;
+    border-radius: 3px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.showcase .extra-div:hover{
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+    transform: translateY(-20px);
+}
+
+/* ######################################## Service Styling #################################################################### */
+
+.service{
+    background: rgb(223, 240, 245);
+    padding: 50px 0;
+    margin-bottom: 50px;
+}
+
+.headings{
+    margin-bottom: 50px;
+}
+
+.headings h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.service-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+}
+
+.service-text{
+    margin-bottom: 25px;
+}
+
+i{
+    color: rgb(39, 132, 238)
+}
+
+/* ########################################### project-work styling ############################################### */
+
+.project-work p{
+    text-transform: uppercase;
+}
+
+.project-work h1{
+    color: rgb(39, 132, 238);
+    font-size: 2rem;
+}
+
+
+/* ########################################### pricing styling ############################################### */
+.pricing{
+    margin: 2rem 0;
+    background: rgb(223, 240, 245);
+    padding: 50px;
+}
+
+.money{
+    font-size: 40px;
+    line-height: 1;
+    color:#606060;
+}
+
+.card{
+    transition: 0.3s;
+}
+
+.card-header{
+    font-size: 1.6rem;
+    font-weight: bold;
+    background: #fff !important;
+    padding: 0.5rem 0.2rem !important;
+}
+
+.card-body{
+    padding: 1.5rem 0 !important;
+}
+
+.card-body li{
+    padding: 8px 0;
+}
+
+.card-footer{
+    background: #fff;
+    padding: 1.5rem 0 !important;
+}
+ 
+.card-footer a{
+    border: 2px solid  rgb(39, 132, 238);
+    border-radius: 50px;
+    margin: 5px 5px;
+    padding: 12px 35px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #fff;
+    color: rgb(39, 132, 238);
+    transition: background-color 0.3s ease-in-out;
+}
+
+.card-footer a:hover{
+    color: #fff;
+    background: rgb(39, 132, 238);
+    text-decoration: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.card:hover .card-header, .card:hover .money{
+    color:rgb(39, 132, 238)
+}
+
+/* <!-- ########################################### Client Review styling ########################################### --> */
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.about h1{
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2;
+    padding: 0.5rem 0;
+}
+
+.box{
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3);
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.box:hover{
+    background: rgb(170, 233, 252);
+}
+
+.carousel-indicators{
+    position: absolute;
+    right: 0;
+    bottom: -60px!important;
+}
+
+.carousel-indicators li{
+    background-color: #16c9f6!important;
+}
+
+.box a{
+    position: relative;
+}
+
+.box a img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-top: 1.3rem;
+}
+
+.box a::after{
+    content: "\f4ad";
+    font-family: "Font Awesome 5 Free";
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(to right, #1e5799 0%, #3ccdbb 0%, #16c9f6 100%);
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box h1{
+    font-size: 1rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 0.6rem;
+}
+
+.box h2{
+    font-size: 0.7rem;
+    font-size: 400;
+    color:#666666;
+    margin-bottom: 1.1rem;
+}
+
+.box p span{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(21, 183, 247);
+}
+
+
+
+/* ############################################ Contact styling ######################################  */
+
+.contact{
+    margin-top: 3rem;
+    width: 100%;
+    position: relative;
+    background: rgb(223, 240, 245);
+}
+
+.contact h1{
+    padding-top: 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 2;
+}
+
+.form-btn{
+    border: 2px solid  rgb(39, 132, 238);
+    border-radius: 50px;
+    margin: 5px 5px;
+    padding: 12px 26px;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4;
+    background: #fff;
+    color: rgb(6, 114, 238);
+    transition: background-color 0.3s ease-in-out;
+}
+
+/* ########################################## footer styling ############################## */
+
+.footer{
+    width: 100%;
+    height: auto;
+    background:  rgb(158, 208, 236);
+    margin-top: 1rem;
+}
+
+.footer h6, .footer p{
+    color: white;
+}
+
+.footer i{
+    padding: 1rem 2rem;
+}
+
+.footer .fb, .footer .tt{
+    color: rgb(43, 139, 248);
+}
+
+.footer .ig{
+    color: rgb(214, 95, 165);
+}
+
+.footer .fb:hover, .footer .tt:hover{
+    color: rgb(6, 114, 202);
+}
+
+.footer .ig:hover{
+    color: rgb(216, 55, 149);
+}
+
+#arrow-btn{
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    border: none;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    background: #2885f0;
+}
+
+#arrow-btn:hover{
+    background: #606060;
+}
+
+/* ##################################### Media Queries ################################### */
+
+@media(max-width: 768px){
+    body{
+        font-size: 75%;
+    }
+    .header{
+        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
+    }
+    .nav-item{
+        text-align: center;
+    }
+
+    .nav-item a:hover{
+        border-bottom: none;
+    }
+}
+
+
+@media(max-width: 327px){
+    .nav-item a{
+        text-align: center;
+    }
+
+    .navbar-brand{
+        font-size: small!important;
+    }
+
+    .header-buttons a{
+        padding: 8px 25px;
+        font-size: 0.7rem;
+        line-height: 1.5;
+    }
+
+    .nav-item a:hover{
+        border-bottom: none;
+    }
+}
